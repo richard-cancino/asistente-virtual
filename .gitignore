@@ -1,0 +1,7 @@
+.env
+node_modules
+dist
+__tests__
+coverage
+package-lock.json
+yarn.lock

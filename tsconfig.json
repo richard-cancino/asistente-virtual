@@ -1,0 +1,31 @@
+{
+  "compilerOptions": {
+    "target": "ES6",
+    "lib": ["es6"],
+    "types": ["reflect-metadata"],
+    "module": "CommonJS",
+    "strict": true,
+    "strictPropertyInitialization": false,
+    "moduleResolution": "node",
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+    "baseUrl": ".",
+    "paths": {
+      "@core/*": [
+        "src/core/*"
+      ],
+      "@logic/*": [
+        "src/logic/*"
+      ],
+      "@web/*": [
+        "src/web/*"
+      ],
+      "@data/*": [
+        "src/data/*"
+      ]
+    },
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+  }
+}
