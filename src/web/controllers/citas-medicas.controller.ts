@@ -56,10 +56,8 @@ export class CitasMedicasController {
         );
       }
 
-      const message = StringUtils.format(
-        ValidationConstants.MESSAGE_RESPONSE_GET_SUCCESS,
-        this.entityName
-      );
+      const message = 'Test for this endpoint'
+
       const response = singleResponse(message, true, result);
 
       res.status(200).send(response);
@@ -79,10 +77,7 @@ export class CitasMedicasController {
       const [result, count] =
         await this._service.obtenerCitasMedicasPorPaciente(pacienteId);
 
-      const message = StringUtils.format(
-        ValidationConstants.MESSAGE_RESPONSE_GET_SUCCESS,
-        this.entityName
-      );
+      const message = 'Test for this endpoint'
       const response = resultResponse(count, message, true, result);
 
       res.status(200).send(response);
@@ -100,10 +95,8 @@ export class CitasMedicasController {
     try {
       const result = await this._service.create(req.body);
 
-      const message = StringUtils.format(
-        ValidationConstants.MESSAGE_RESPONSE_POST_SUCCESS,
-        this.entityName
-      );
+      const message = 'Test for this endpoint'
+
       const response = singleResponse(message, true, result);
 
       res.status(201).send(response);
@@ -135,10 +128,8 @@ export class CitasMedicasController {
 
       const result = await this._service.deleteOne(citaMedica);
 
-      const message = StringUtils.format(
-        ValidationConstants.MESSAGE_RESPONSE_DELETE_SUCCESS,
-        this.entityName
-      );
+      const message = 'Test for this endpoint'
+
       const response = singleResponse(message, true, result);
 
       res.status(200).send(response);
